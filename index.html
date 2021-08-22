@@ -15,20 +15,18 @@
     <p>身長<input type="number" name="sintyo" value="160"> (cm)</p>
     <p>体温<input type="number" name="taion" value="36"> (℃)</p>
     <br/>
+    <p>基礎代謝 <output name="taisya" style="background:#FCC;">0</output> (kcal) </p>
+    <input type="button" onclick="taisya.value = 0.83 * Number(taiju.value) * Number(taion.value);" value="代謝計算">
     <br/>
     <p>BMI <output name="BMI" style="background:#FCC;">0</output></p>
+    <input type="button" onclick="BMI.value = Number(taiju.value) / (Number(sintyo.value)/100)^2;" value="BMI計算">
+    <br/>
     <p>18.5未満:痩せ型</p>
     <p>18.5~25:普通</p>
     <p>25~30未満:肥満1度</p>
     <p>30~35未満:肥満2度</p>
     <p>35~40未満:肥満3度</p>
     <p>40以上:肥満4度</p>
-    <input type="button" onclick="BMI.value = Number(taiju.value) / (Number(sintyo.value)/100)^2;" value="BMI計算">
-    <br/>
-    <p>基礎代謝 <output name="taisya" style="background:#FCC;">0</output> (kcal) </p>
-    <input type="button" onclick="taisya.value = 0.83 * Number(taiju.value) * Number(taion.value);" value="代謝計算">
-    <br/>
-    <br/>
  </form>
  <img src="top.png" alt="">
 </body>
