@@ -18,10 +18,14 @@
  </form>
  <form>
     <br/><br/>BMI = <br/>
-    体重<input type="number" name="taiju2" value="50"> (kg) / 
-    身長<input type="number" name="sintyo" value="160"> (cm)^2
-    <output name="BMI" style="background:#FCC;">0</output>
-    <input type="button" onclick="BMI.value = Number(taiju2.value) * (Number(sintyo.value)/100)^2;" value="計算">
+    <p>体重<input type="number" name="taiju2" value="50"> (kg)</p>
+    身長<input type="number" name="sintyo" value="160"> (cm)<br/>
+    体温<input type="number" name="taion" value="36"> (℃)<br/>
+    BMI <output name="BMI" style="background:#FCC;">0</output> <br/><br/>
+    <input type="button" onclick="BMI.value = Number(taiju2.value) * (Number(sintyo.value)/100)^2;" value="BMI計算">
+    <br/><br/>
+    基礎代謝 <output name="taisya" style="background:#FCC;">0</output><br/><br/>
+    <input type="button" onclick="taisya.value = 0.83 * Number(taiju2.value) * Number(taion.value):" value="代謝計算">
  </form>
  <img src="top.png" alt="">
 </body>
