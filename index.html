@@ -17,7 +17,7 @@
     <p>室温<input type="number" name="situon" value="28"> (℃)</p>
    
     <p>輻射による基礎代謝 <output name="fukusya" style="background:#FCC;">0</output> (kcal/日)
-    <input type="button" onclick="fukusya.value = Math.round(24*Number(sintyo.value)**0.725 * Number(taiju.value)**0.425 *0.007184 *0.8* 4.88*10**(-8)* ((273+Number(taion.value))**4-(273+Number(situon.value))**4));" value="輻射代謝計算2"></p>
+    <input type="button" onclick="fukusya.value = Math.round(24*Number(sintyo.value)**0.725 * Number(taiju.value)**0.425 *0.007184 *0.8* 4.88*10**(-8)* ((273+Number(taion.value))**4-(273+Number(situon.value))**4));" value="代謝計算"></p>
 
     <p>BMI <output name="BMI" style="background:#FCC;">0</output>
     <input type="button" onclick="BMI.value = Math.round(Number(taiju.value)*10 / (Number(sintyo.value)/100)**2)/10;" value="BMI計算"></p>
