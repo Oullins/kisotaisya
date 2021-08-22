@@ -8,9 +8,10 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-  <form oninput="result.value = Math.round(Number(pri.value) * Number(tax.value) /100 + Number(pri.value));">税抜き
-    <input type="number" name="pri" value="0" size="5"> × 
-    <input type="number" name="tax" value="10" size="5"> ％(消費税) <br /><br />= 税込み¥
+  <form oninput="result.value = 0.83 * Number(taiju.value) * Number(tax.value);">身長(cm)
+    <input type="number" name="taiju" value="0" size="5"> × 
+    <input type="number" name="taion" value="10" size="5"> 体温(℃） <br /><br />= 
+    基礎代謝 (kcal)
     <output name="result">0</output>
  </form>
 </body>
