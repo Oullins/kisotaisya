@@ -16,10 +16,10 @@
     <p>体温<input type="number" name="taion" value="36"> (℃)</p>
     <br/>
     <p>基礎代謝 <output name="taisya" style="background:#FCC;">0</output> (kcal)
-    <input type="button" onclick="taisya.value = 0.83 * Number(taiju.value) * Number(taion.value);" value="代謝計算"></p>
+    <input type="button" onclick="taisya.value = Math.round(0.83 * Number(taiju.value) * Number(taion.value));" value="代謝計算"></p>
     <br/>
     <p>BMI <output name="BMI" style="background:#FCC;">0</output>
-    <input type="button" onclick="BMI.value = Number(taiju.value) / (Number(sintyo.value)/100)**2;" value="BMI計算"></p>
+    <input type="button" onclick="BMI.value = Math.round(Number(taiju.value) / (Number(sintyo.value)/100)**2)/10;" value="BMI計算"></p>
     <br/>
     <p>18.5未満:痩せ型</p>
     <p>18.5~25:普通</p>
