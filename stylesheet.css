@@ -8,6 +8,10 @@ input{
   width:250px;
   font-size:100%;
 }
+output{
+  width:250px;
+  font-size:100%;
+}
 
 li{
   list-style:none;
