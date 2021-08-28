@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="kisotaisya" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheet2.css" type="text/css"/>
+<title>ダイエット計算用</title>
+<script type="text/javascript">
+function onClick(){
+var value1=parseFloat(document.getElementById("taiju").value);
+var value2=parseFloat(document.getElementById("sintyo").value);
+var value3=parseFloat(document.getElementById("taion").value);
+var value4=parseFloat(document.getElementById("situon").value);
+var value5=parseFloat(document.getElementById("jikan").value);
+var value6=parseFloat(document.getElementById("mets").value);
+
+var result1 = Math.round(10*value1 /(value2/100)**2)/10;
+var result2 = Math.round(24*value2**0.725 * value1**0.425 *0.007184 *0.8* 4.88*10**(-8)* ((273+value3)**4-(273+value4)**4))
+var result3 = Math.round((value1*15+200*(value3-36.8))/1000/24*580*24)
+var result4 = Math.round((value6-1)*value1*value5*1.05)
+
+document.querySelector('.result1').innerHTML = result1;
+document.querySelector('.result2').innerHTML = result2;
+document.querySelector('.result3').innerHTML = result3;
+document.querySelector('.result4').innerHTML = result4;
+
+}
+</script>
+</head>
+<body>
+<h1>ダイエット計算用</h1>
+<h3>放熱、発汗、運動による基礎代謝をそれぞれ計算します</h3>
+<form name="form1">
+    <p>　体重　<input type="number" id="taiju" value="50"> (kg)</p>
+    <p>　身長　<input type="number" id="sintyo" value="160"> (cm)</p>
+    <p>　体温　<input type="number" id="taion" value="36"> (℃)</p>
+    <p>　室温　<input type="number" id="situon" value="28"> (℃)</p>
+    <p>運動時間<input type="number" id="jikan" value="1"> (時間)</p>
+    <p>運動状態(METs)を選択してください</p>
+    <select id = "mets">
+    <option value="1" selected>1.0Mets:安静、睡眠</option>
+    <option value="1.5">1.5Mets:座って作業、入浴、</option>
+    <option value="1.8">1.8Mets:立って作業/option>
+    <option value="2">2.0Mets:音楽活動、手を洗う、歯磨き</option>
+    <option value="2.5">2.5Mest:着替える、自動車の運転、ビリヤード、ダーツ、野球</option>
+    <option value="3">3.0Mets:歩行 4km/h、ボウリング、バレーボール</option>
+    <option value="3.5">3.5Mets:オートバイの運転、階段を降りる、トランポリン</option>
+    <option value="4">4.0Mets:通勤や通学、階段を上る、ソフトボール、ゴルフ</option>
+    <option value="6">6.0Mets:ランニング 6.4km/h</option>
+    <option value="7">7.0Mets:サッカー、スケート、バスケットボール</option>
+    <option value="9">9.0Mets:ランニング 8.4km/h</option>
+    <option value="11">11.0Mets:ランニング 11.3km/h</option>
+    </select>
+<br><br>
+<button class="button" type="button" onclick="onClick();">計算</button>
+<br>
+<p>放熱による基礎代謝  <span class="result2"> </span> (kcal/日)</p>
+<p>発汗による基礎代謝  <span class="result3"> </span> (kcal/日)</p>
+<p>運動による基礎代謝  <span class="result4"> </span> (kcal/運動した時間)</p>
+<p>BMI= <span class="result1"> </span></p>
+<ul>
+    <li>18.5未満:痩せ型</li>
+    <li>18.5~25:普通</li>
+    <li>25~30未満:肥満1度</li>
+    <li>30~35未満:肥満2度</li>
+    <li>35~40未満:肥満3度</li>
+    <li>40以上:肥満4度</li>
+    </ul>
+</form>
+<img src="top.jpg" alt="" width="50%">
+</body>
+</html>
