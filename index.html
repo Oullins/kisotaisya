@@ -5,27 +5,6 @@
 <meta name="kisotaisya" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="stylesheet2.css" type="text/css"/>
 <title>ダイエット計算用</title>
-<script type="text/javascript">
-function onClick(){
-var value1=parseFloat(document.getElementById("taiju").value);
-var value2=parseFloat(document.getElementById("sintyo").value);
-var value3=parseFloat(document.getElementById("taion").value);
-var value4=parseFloat(document.getElementById("situon").value);
-var value5=parseFloat(document.getElementById("jikan").value);
-var value6=parseFloat(document.getElementById("mets").value);
-
-var result1 = Math.round(10*value1 /(value2/100)**2)/10;
-var result2 = Math.round(24*value2**0.725 * value1**0.425 *0.007184 *0.8* 4.88*10**(-8)* ((273+value3)**4-(273+value4)**4))
-var result3 = Math.round((value1*15+200*(value3-36.8))/1000/24*580*24)
-var result4 = Math.round((value6-1)*value1*value5*1.05)
-
-document.querySelector('.result1').innerHTML = result1;
-document.querySelector('.result2').innerHTML = result2;
-document.querySelector('.result3').innerHTML = result3;
-document.querySelector('.result4').innerHTML = result4;
-
-}
-</script>
 </head>
 <body>
 <h1>ダイエット計算用</h1>
@@ -53,21 +32,22 @@ document.querySelector('.result4').innerHTML = result4;
     <option value="11">11.0Mets:ランニング 11.3km/h</option>
     </select>
     <br><br>
-<button class="button" type="button" onclick="onClick();">計算</button>
-<br>
-<p>放熱による基礎代謝  <span class="result2"> </span> (kcal/日)</p>
-<p>発汗による基礎代謝  <span class="result3"> </span> (kcal/日)</p>
-<p>運動による基礎代謝  <span class="result4"> </span> (kcal/運動した時間)</p>
-<p>BMI= <span class="result1"> </span></p>
-<ul>
-    <li>18.5未満:痩せ型</li>
-    <li>18.5~25:普通</li>
-    <li>25~30未満:肥満1度</li>
-    <li>30~35未満:肥満2度</li>
-    <li>35~40未満:肥満3度</li>
-    <li>40以上:肥満4度</li>
+    <button class="button" type="button" onclick="onClick();">計算</button>
+    <br>
+    <p>放熱による基礎代謝  <span class="result2"> </span> (kcal/日)</p>
+    <p>発汗による基礎代謝  <span class="result3"> </span> (kcal/日)</p>
+    <p>運動による基礎代謝  <span class="result4"> </span> (kcal/運動した時間)</p>
+    <p>BMI= <span class="result1"> </span></p>
+    <ul>
+        <li>18.5未満:痩せ型</li>
+        <li>18.5~25:普通</li>
+        <li>25~30未満:肥満1度</li>
+        <li>30~35未満:肥満2度</li>
+        <li>35~40未満:肥満3度</li>
+        <li>40以上:肥満4度</li>
     </ul>
-</form>
-<img src="top.jpg" alt="" width="50%"><img src="naraijuku.jpg" alt"" width="50%">
+    </form>
+    <img src="top.jpg" alt="" width="50%"><img src="naraijuku.jpg" alt"" width="50%">
+    <script type="text/javascript" src="taisyakeisan.js"></script>
 </body>
 </html>
