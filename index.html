@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>ダイエット計算用</h1>
-<h3>放熱、発汗、運動による基礎代謝をそれぞれ計算します</h3>
+<h3>放熱、発汗、運動による消費カロリーを計算します</h3>
 <form name="form1">
     <p>　体重　<input class="input1" type="number" id="taiju" value="50"> (kg)</p>
     <p>　身長　<input class="input1" type="number" id="sintyo" value="160"> (cm)</p>
@@ -114,9 +114,10 @@
 <br>
     <button class="button" type="button" onclick="onClick();">計算</button>
     <br>
-    <p>放熱による基礎代謝  <span class="result2"> </span> (kcal/日)</p>
-    <p>発汗による基礎代謝  <span class="result3"> </span> (kcal/日)</p>
-    <p>運動による基礎代謝  <span class="result4"> </span> (kcal/活動時間)</p>
+    <p>放熱  <span class="result2"> </span> (kcal/日)</p>
+    <p>発汗  <span class="result3"> </span> (kcal/日)</p>
+    <p>運動  <span class="result4"> </span> (kcal/活動時間)</p>
+    <p>Total(放熱+発汗+運動) <span class="result5"></span> (kcal/日)</p>
     <p>BMI= <span class="result1"> </span></p>
     <ul>
         <li>18.5未満:痩せ型</li>
