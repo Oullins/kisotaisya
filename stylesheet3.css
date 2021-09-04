@@ -8,9 +8,7 @@ body {
   width:30%;
   font-size:100%;
 }
-.input2{
-  margin: 30px;
-}
+
 .input2 input[type="radio"]{
   transform:scale(2);
   vertical-align: middle;         /* 並び位置   */
@@ -32,6 +30,6 @@ button{
 select{
   width:80%;
   font-size:100%;
-  margin:10px auto;
+  margin:20px auto;
 }
 
