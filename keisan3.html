@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="kisotaisya" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheet3.css" type="text/css"/>
+<title>ダイエット計算用</title>
+</head>
+<body>
+<h1>ダイエット計算用</h1>
+<h3>放熱、発汗、運動による基礎代謝をそれぞれ計算します</h3>
+<form name="form1">
+    <p>　体重　<input class="input1" type="number" id="taiju" value="50"> (kg)</p>
+    <p>　身長　<input class="input1" type="number" id="sintyo" value="160"> (cm)</p>
+    <p>　体温　<input class="input1" type="number" id="taion" value="36"> (℃)</p>
+    <p>　室温　<input class="input1" type="number" id="situon" value="28"> (℃)</p>
+    <p>活動時間<input class="input1" type="number" id="jikan" value="1"> (時間)</p>
+    <p>活動強度(METs)を選択してください <a href="https://sports.go.jp/.assets/20200918_3.jpg">METsの説明</a></p>
+<div class="input2">
+<input type="radio" name="maker" value="A" onclick="formSwitch()" checked><label>家での活動</label>
+<input type="radio" name="maker" value="B" onclick="formSwitch()"><label>スポーツ</label>
+<input type="radio" name="maker" value="C" onclick="formSwitch()"><label>歩行</label>
+<input type="radio" name="maker" value="D" onclick="formSwitch()"><label>ランニング</label>
+</div>
+
+<div id="A">
+    <select id = "mets">
+    <option value="1" selected>1:安静、睡眠</option>
+    <option value="1.5">1.5:座って作業、入浴、デスクワーク、音楽鑑賞、観戦</option>
+    <option value="1.8">1.8:立って作業、アイロンがけ</option>
+    <option value="2">2:シャワー、手洗、歯磨き、楽器演奏</option>
+    <option value="2.5">2.5:着替え、自動車の運転、アイロンがけ</option>
+    <option value="3.5">3.5:調理</option>
+    <option value="4">4:階段上り、洗濯干し</option>
+    <option value="4.5">4.5:果実/野菜を摘む</option>
+    <option value="5">5:荷物(11~22kg)を運ぶ</option>
+    <option value="8">8:荷物(11~22kg)を上の階へ運ぶ</option>
+    <option value="10">10:荷物(23~34kg)を上の階へ運ぶ</option>
+    <option value="12">12:荷物(36kg以上)を上の階へ運ぶ</option>
+    </select>
+</div>
+<div id="B">
+    <select id = "mets2">
+    <option value="3">3:ボウリング</option>
+    <option value="3.5">3.5:オートバイ運転</option>
+    <option value="4">4:ソフトボール</option>
+    <option value="5">5:スクワット、ダンス</option>
+    <option value="7">7:サッカー、バスケ</option>
+    </select>
+</div>
+<div id="C">
+    <select id = "mets3">
+    <option value="2.5">2.5:水中歩行（ゆっくり）</option>
+    <option value="3">3:歩行 4km/h、犬の散歩</option>
+    <option value="3.5">3.5:階段下り、徒歩で旅行</option>
+    <option value="4">4:階段上り</option>
+    <option value="4.5">4.5:水中歩行（はやい）</option>
+    </select>
+</div>
+<div id="D">
+    <select id = "mets4">
+    <option value="6">6ランニング 6.4km/h</option>
+    <option value="9">9:ランニング 8.4km/h</option>
+    <option value="11">11:ランニング 11.3km/h</option>
+    </select>
+</div>
+<br>
+    <button class="button" type="button" onclick="onClick();">計算</button>
+    <br>
+    <p>放熱による基礎代謝  <span class="result2"> </span> (kcal/日)</p>
+    <p>発汗による基礎代謝  <span class="result3"> </span> (kcal/日)</p>
+    <p>運動による基礎代謝  <span class="result4"> </span> (kcal/運動した時間)</p>
+    <p>BMI= <span class="result1"> </span></p>
+    <ul>
+        <li>18.5未満:痩せ型</li>
+        <li>18.5~25:普通</li>
+        <li>25~30未満:肥満1度</li>
+        <li>30~35未満:肥満2度</li>
+        <li>35~40未満:肥満3度</li>
+        <li>40以上:肥満4度</li>
+    </ul>
+    </form>
+    <img src="top.jpg" alt="" width="50%"><img src="naraijuku.jpg" alt"" width="50%">
+    <script type="text/javascript" src="taisyakeisan3.js"></script>
+</body>
+</html>
