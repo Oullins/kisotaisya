@@ -21,18 +21,24 @@
 <input type="radio" name="maker" value="B" onclick="formSwitch()"><label>スポーツ</label>
 <input type="radio" name="maker" value="C" onclick="formSwitch()"><label>歩行</label>
 <input type="radio" name="maker" value="D" onclick="formSwitch()"><label>ランニング</label>
+<input type="radio" name="maker" value="E" onclick="formSwitch()"><label>自転車</label>
 </div>
 
 <div id="A">
     <select id = "mets">
     <option value="1" selected>1:安静、睡眠</option>
-    <option value="1.5">1.5:座って作業、入浴、デスクワーク、音楽鑑賞、観戦</option>
-    <option value="1.8">1.8:立って作業、アイロンがけ</option>
+    <option value="1.3">編み物、読書</option>
+    <option value="1.5">1.5:座って作業、入浴</option>
+    <option value="1.8">1.8:立って作業、皿洗い、アイロンがけ</option>
     <option value="2">2:シャワー、手洗、歯磨き、楽器演奏</option>
-    <option value="2.5">2.5:着替え、自動車の運転、アイロンがけ</option>
-    <option value="3.5">3.5:調理</option>
+    <option value="2.3">2.3:掃き掃除、埃とり、食料品の買い物</option>
+    <option value="2.5">2.5:着替え、食事の準備や片付け、アイロンがけ</option>
+    <option value="3.2">3.2:窓掃除</option>
+    <option value="3.3">3.3:調理、掃除機かけ、ベッドメイク</option>
+    <option value="3.5">3.5:浴室や浴槽の掃除</option>
     <option value="4">4:階段上り、洗濯干し</option>
     <option value="4.5">4.5:果実/野菜を摘む</option>
+    <option value="4.8">4.8:部屋の片付け</option>
     <option value="5">5:荷物(11~22kg)を運ぶ</option>
     <option value="8">8:荷物(11~22kg)を上の階へ運ぶ</option>
     <option value="10">10:荷物(23~34kg)を上の階へ運ぶ</option>
@@ -41,11 +47,27 @@
 </div>
 <div id="B">
     <select id = "mets2">
-    <option value="3">3:ボウリング</option>
-    <option value="3.5">3.5:オートバイ運転</option>
-    <option value="4">4:ソフトボール</option>
+    <option value="2.5">2.5:ダーツ、自動車の運転</option>
+    <option value="3">3:ボウリング、太極拳、フリスビー</option>
+    <option value="3.5">3.5:オートバイ運転、ハングライダー</option>
+    <option value="3.8">3.8:体操</option>
+    <option value="4">4:卓球、バレーボール、ソフトボール、ジャグリング、カーリング</option>
+    <option value="4.5">4.5:トランポリン</option>
+    <option value="4.8">4.8:ゴルフ全般</option>
     <option value="5">5:スクワット、ダンス</option>
-    <option value="7">7:サッカー、バスケ</option>
+    <option value="5.5">5.5:乗馬</option>
+    <option value="6">6:スケートボード</option>
+    <option value="7">7:サッカー、バスケ、キックボール</option>
+    <option value="7.3">7.3:テニス全般</option>
+    <option value="7.5">7.5:ローラーブレード 14.4km/h</option>
+    <option value="7.8">7.8:フィールドホッケー</option>
+    <option value="8">8:アメフト、ハンドボール</option>
+    <option value="8.3">8.3:ラグビー</option>
+    <option value="8.8">8.8:縄跳び毎分100ステップ未満</option>
+    <option value="9.8">9.8:ローラーブレード 24.1km/h</option>
+    <option value="10">10:氷上ホッケー</option>
+    <option value="11.8">11.8:縄跳び毎分100-120ステップ</option>
+    <option value="12.3">12.3:縄跳び毎分120-160ステップ</option>
     </select>
 </div>
 <div id="C">
@@ -59,12 +81,38 @@
 </div>
 <div id="D">
     <select id = "mets4">
-    <option value="6">6ランニング 6.4km/h</option>
+    <option value="6">6:ランニング 6.4km/h</option>
+    <option value="8.3">8.3:ランニング 8.0km/h</option>
     <option value="9">9:ランニング 8.4km/h</option>
+    <option value="9.8">9.8:ランニング 9.7km/h</option>
+    <option value="10.5">10.5:ランニング 10.8km/h<option>
     <option value="11">11:ランニング 11.3km/h</option>
+    <option value="11.5">11.5:ランニング 12.1km/h</option>
+    <option value="11.8">11.8:ランニング 12.9km/h</option>
+    <option value="12.3">12.3:ランニング 13.8km/h</option>
+    <option value="12.8">12.8:ランニング 14.5km/h</option>
+    <option value="14.5">14.5:ランニング 16.1km/h</option>
+    <option value="16">16:ランニング 17.7km/h</option>
+    <option value="19">19:ランニング 19.3km/h</option>
+    <option value="19.8">19.8:ランニング 20.9km/h</option>
+    <option value="23">23:ランニング 22.5km/h</option>
     </select>
 </div>
-<br>
+<div id="E">
+    <select id = "mets5">
+    <option value="3.5">3.5:自転車 8.9km/h</option>
+    <option value="4">4:自転車 通勤、娯楽</option>
+    <option value="5">5:一輪車</option>
+    <option value="5.8">5.8:自転車 15.1km/h</option>
+    <option value="6.8">6.8:自転車 16.1-19.2km/h</option>
+    <option value="8">8:自転車 19.3-22.4km/h</option>
+    <option value="8.5">8.5:自転車 山道全般</option>
+    <option value="10">10:自転車 22.5-25.6km/h</option>
+    <option value="12">12:自転車 25.7-30.6km/h</option>
+    <option value="14">14:自転車 山道上り坂</option>
+    </select>
+</div>
+<br><br>
     <button class="button" type="button" onclick="onClick();">計算</button>
     <br>
     <p>放熱による基礎代謝  <span class="result2"> </span> (kcal/日)</p>
