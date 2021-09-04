@@ -11,8 +11,10 @@ var value6=parseFloat(document.getElementById("mets").value);
 var value6=parseFloat(document.getElementById("mets2").value);
 } else if (hoge[2].checked){
 var value6=parseFloat(document.getElementById("mets3").value);
-} else{
+} else if (hoge[3].checked){
 var value6=parseFloat(document.getElementById("mets4").value);
+} else{
+var value6=parseFloat(document.getElementById("mets5").value);
 }
 
 	var result1 = Math.round(10*value1 /(value2/100)**2)/10;
@@ -33,21 +35,31 @@ document.getElementById('A').style.display="";
 document.getElementById('B').style.display="none";
 document.getElementById('C').style.display="none";
 document.getElementById('D').style.display="none";
+document.getElementById('E').style.display="none";
 } else if (hoge[1].checked){
 document.getElementById('A').style.display="none";
 document.getElementById('B').style.display="";
 document.getElementById('C').style.display="none";
 document.getElementById('D').style.display="none";
+document.getElementById('E').style.display="none";
 } else if (hoge[2].checked){
 document.getElementById('A').style.display="none";
 document.getElementById('B').style.display="none";
 document.getElementById('C').style.display="";
 document.getElementById('D').style.display="none";
-} else {
+document.getElementById('E').style.display="none";
+} else if (hoge[3].checked){
 document.getElementById('A').style.display="none";
 document.getElementById('B').style.display="none";
 document.getElementById('C').style.display="none";
 document.getElementById('D').style.display="";
+document.getElementById('E').style.display="none";
+} else {
+document.getElementById('A').style.display="none";
+document.getElementById('B').style.display="none";
+document.getElementById('C').style.display="none";
+document.getElementById('D').style.display="none";
+document.getElementById('E').style.display="";
 }
 }
 window.addEventListener('load',formSwitch());
