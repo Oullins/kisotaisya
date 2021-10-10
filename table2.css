@@ -61,10 +61,10 @@ input[type='checkbox'] {
   .drink        tr[drink]         {display: table-row;}
   .fruit        tr[fruit]         {display: table-row;}
   .vegetable    tr[vegetable]     {display: table-row;}
-  .meat         tr[meat]          {display: table-row;}
-  .kakomeat    tr[kakomeat]      {display: table-row;}
-  .sauce        tr[sauce]  	{display: table-row;}
+  .akameat      tr[akameat]       {display: table-row;}
+  .kakomeat     tr[kakomeat]	{display: table-row;}
   .fish         tr[fish]          {display: table-row;}
+  .oil          tr[oil]		{display: table-row;}
 
 
 /* === フィルタボタン ============================ */
