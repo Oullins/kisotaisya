@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="calTable" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheet2.css" type="text/css"/>
+<title>食品カロリー比較用</title>
+</head>
+<body>
+
+<h1>食品の他栄養成分 比較用</h1>
+<h2>カロリー等のランキングを切替表示できます</h2>
+<h3>※全て100g当たり</h3>
+    <table id = "sampleTable"> 
+	<tr class="colTitle">
+            <th>
+		<input type="checkbox" onChange="goFilter2()" id="chkKokurui">穀類　<br>
+        		<input type="checkbox" onChange="goFilter2()" id="chkNamamen">生麺　<br>
+     		<input type="checkbox" onChange="goFilter2()" id="chkKanmen">乾麺　<br>
+     		<input type="checkbox" onChange="goFilter2()" id="chkDrink">飲料　<br>
+		<input type="checkbox" onChange="goFilter2()" id="chkFruit">果物　<br>
+       		<input type="checkbox" onChange="goFilter2()" id="chkVegetable">野菜　<br>
+		<input type="checkbox" onChange="goFilter2()" id="chkMeat">赤身肉<br>
+		<input type="checkbox" onChange="goFilter2()" id="chkKakomeat">加工肉<br>
+		<input type="checkbox" onChange="goFilter2()" id="chkFish">魚　　<br>
+		<input type="checkbox" onChange="goFilter2()" id="chkSauce">調味料<br>
+
+	   </th>	
+            <th>食品名</th>
+            <th cmanSortBtn>カロリー(kcal)</th>
+            <th cmanSortBtn>タンパク質(g)</th>
+            <th cmanSortBtn>脂質(g)</th>
+            <th cmanSortBtn>炭水化物(g)</th>
+            <th cmanSortBtn>食塩相当(g)</th>
+        </tr>
+        <tr kokurui>
+            <td>穀類</td>
+            <td>オートミール</td>
+            <td>380</td>
+            <td>13.7</td>
+            <td>5.7</td>
+            <td>69.1</td>
+            <td>0</td>
+        </tr>
+        <tr kokurui>
+            <td>穀類</td>
+            <td>蕎麦粉</td>
+            <td>361</td>
+            <td>12</td>
+            <td>3.1</td>
+            <td>69.6</td>
+            <td>0</td>
+        </tr>
+        <tr kokurui>
+            <td>穀類</td>
+            <td>白米</td>
+            <td>359</td>
+            <td>6.1</td>
+            <td>0.9</td>
+            <td>77.6</td>
+            <td>0</td>
+        </tr>
+        <tr kokurui>
+            <td>穀類</td>
+            <td>玄米</td>
+            <td>353</td>
+            <td>6.8</td>
+            <td>2.7</td>
+            <td>74.3</td>
+            <td>0</td>
+        </tr>
+        <tr kokurui>
+            <td>穀類</td>
+            <td>大麦</td>
+            <td>341</td>
+            <td>10.9</td>
+            <td>2.1</td>
+            <td>72.1</td>
+            <td>0</td>
+        </tr>
+        <tr kokurui>
+            <td>穀類</td>
+            <td>小麦</td>
+            <td>337</td>
+            <td>10.6</td>
+            <td>3.1</td>
+            <td>72.2</td>
+            <td>0</td>
+        </tr>
+        <tr kokurui>
+            <td>穀類</td>
+            <td>ライ麦粉（全粒粉)</td>
+            <td>334</td>
+            <td>12.7</td>
+            <td>2.7</td>
+            <td>70.7</td>
+            <td>0</td>
+        </tr>
+        <tr kokurui>
+            <td>穀類</td>
+            <td>小麦粉（全粒粉)</td>
+            <td>328</td>
+            <td>12.8</td>
+            <td>2.9</td>
+            <td>68.2</td>
+            <td>0</td>
+        </tr>
+        <tr namamen>
+            <td>生麺</td>
+            <td>沖縄そば</td>
+            <td>284</td>
+            <td>9.2</td>
+            <td>2</td>
+            <td>54.2</td>
+            <td>2.1</td>
+        </tr>
+        <tr namamen>
+            <td>生麺</td>
+            <td>中華麺</td>
+            <td>281</td>
+            <td>8.6</td>
+            <td>1.2</td>
+            <td>55.7</td>
+            <td>1.0</td>
+        </tr>
+        <tr namamen>
+            <td>生麺</td>
+            <td>そば</td>
+            <td>274</td>
+            <td>9.8</td>
+            <td>1.9</td>
+            <td>54.5</td>
+            <td>0</td>
+        </tr>
+        <tr namamen>
+            <td>生麺</td>
+            <td>うどん</td>
+            <td>270</td>
+            <td>6.1</td>
+            <td>0.6</td>
+            <td>56.8</td>
+            <td>2.5</td>
+        </tr>
+        <tr namamen>
+            <td>生麺</td>
+            <td>冷麺</td>
+            <td>252</td>
+            <td>3.9</td>
+            <td>0.7</td>
+            <td>57.6</td>
+            <td>1.3</td>
+        </tr>
+        <tr namamen>
+            <td>生麺</td>
+            <td>パスタ</td>
+            <td>248</td>
+            <td>7.8</td>
+            <td>1.9</td>
+            <td>46.9</td>
+            <td>1.2</td>
+        </tr>
+        <tr kanmen>
+            <td>乾麺</td>
+            <td>うどん</td>
+            <td>384</td>
+            <td>8.5</td>
+            <td>1.1</td>
+            <td>71.9</td>
+            <td>4.3</td>
+        </tr>
+        <tr kanmen>
+            <td>乾麺</td>
+            <td>パスタ</td>
+            <td>379</td>
+            <td>12.2</td>
+            <td>1.9</td>
+            <td>73.9</td>
+            <td>0</td>
+        </tr>
+        <tr kanmen>
+            <td>乾麺</td>
+            <td>中華麺</td>
+            <td>365</td>
+            <td>10.5</td>
+            <td>1.6</td>
+            <td>73</td>
+            <td>1.3</td>
+        </tr>
+        <tr kanmen>
+            <td>乾麺</td>
+            <td>そうめん</td>
+            <td>356</td>
+            <td>9.5</td>
+            <td>1.1</td>
+            <td>72.7</td>
+            <td>3.8</td>
+        </tr>
+        <tr kanmen>
+            <td>乾麺</td>
+            <td>沖縄そば</td>
+            <td>351</td>
+            <td>12</td>
+            <td>1.7</td>
+            <td>67.8</td>
+            <td>4.3</td>
+        </tr>
+        <tr kanmen>
+            <td>乾麺</td>
+            <td>そば</td>
+            <td>344</td>
+            <td>14</td>
+            <td>2.3</td>
+            <td>66.7</td>
+            <td>2.2</td>
+        </tr>
+        <tr kanmen>
+            <td>乾麺</td>
+            <td>手延そうめん</td>
+            <td>342</td>
+            <td>9.3</td>
+            <td>1.4</td>
+            <td>69.7</td>
+            <td>5.8</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>ミルクココア</td>
+            <td>400</td>
+            <td>7.4</td>
+            <td>6.8</td>
+            <td>80.4</td>
+            <td>0.7</td>
+        </tr>
+      <tr drink>
+            <td>飲料</td>
+            <td>ココア</td>
+            <td>386</td>
+            <td>18.5</td>
+            <td>21.6</td>
+            <td>42.4</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>青汁(ケール)</td>
+            <td>312</td>
+            <td>13.8</td>
+            <td>4.4</td>
+            <td>70.2</td>
+            <td>0.6</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>ジン</td>
+            <td>280</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.1</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>本みりん</td>
+            <td>241</td>
+            <td>0.3</td>
+            <td>0</td>
+            <td>43.2</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>ウォッカ・ラム</td>
+            <td>237</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.1</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>ウィスキー・ブランデー</td>
+            <td>234</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>焼酎・泡盛</td>
+            <td>206</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>梅酒</td>
+            <td>155</td>
+            <td>0.1</td>
+            <td>0</td>
+            <td>20.7</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>紹興酒</td>
+            <td>126</td>
+            <td>1.7</td>
+            <td>0</td>
+            <td>5.1</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>日本酒(本醸造酒)</td>
+            <td>106</td>
+            <td>0.4</td>
+            <td>0</td>
+            <td>4.5</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>白ワイン</td>
+            <td>75</td>
+            <td>0.1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>赤ワイン</td>
+            <td>68</td>
+            <td>0.2</td>
+            <td>0</td>
+            <td>1.5</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>調製豆乳</td>
+            <td>63</td>
+            <td>3.2</td>
+            <td>3.6</td>
+            <td>4.8</td>
+            <td>0.1</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>ビール(スタウト)</td>
+            <td>62</td>
+            <td>0.5</td>
+            <td>0</td>
+            <td>4.9</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>牛乳</td>
+            <td>61</td>
+            <td>3.3</td>
+            <td>3.8</td>
+            <td>4.8</td>
+            <td>0.1</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>ぶどうジュース</td>
+            <td>54</td>
+            <td>0.3</td>
+            <td>0.2</td>
+            <td>14.3</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>チューハイ(レモン)</td>
+            <td>51</td>
+            <td>0</td>
+            <td>0</td>
+            <td>2.9</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>りんごジュース</td>
+            <td>47</td>
+            <td>0.1</td>
+            <td>0.2</td>
+            <td>11.4</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>コーラ</td>
+            <td>46</td>
+            <td>0.1</td>
+            <td>0</td>
+            <td>11.4</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>みかんジュース</td>
+            <td>45</td>
+            <td>0.5</td>
+            <td>0.1</td>
+            <td>10.6</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>豆乳</td>
+            <td>44</td>
+            <td>3.6</td>
+            <td>2</td>
+            <td>3.1</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>サイダー</td>
+            <td>41</td>
+            <td>0</td>
+            <td>0</td>
+            <td>10.2</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>ビール(薄色)</td>
+            <td>39</td>
+            <td>0.3</td>
+            <td>0</td>
+            <td>3.1</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>野菜ジュース</td>
+            <td>36</td>
+            <td>1</td>
+            <td>0.3</td>
+            <td>7.8</td>
+            <td>0.1</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>スポーツドリンク</td>
+            <td>21</td>
+            <td>0</td>
+            <td>0</td>
+            <td>5.1</td>
+            <td>0.1</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>お茶(玉露)</td>
+            <td>5</td>
+            <td>1.3</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>コーヒー</td>
+            <td>4</td>
+            <td>0.2</td>
+            <td>0</td>
+            <td>0.7</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>煎茶</td>
+            <td>2</td>
+            <td>0.2</td>
+            <td>0</td>
+            <td>0.2</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>麦茶</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.3</td>
+            <td>0</td>
+        </tr>
+        <tr drink>
+            <td>飲料</td>
+            <td>紅茶</td>
+            <td>1</td>
+            <td>0.1</td>
+            <td>0</td>
+            <td>0.1</td>
+            <td>0</td>
+        </tr>
+    </table>
+<script type="text/javascript" src="table2.js"></script>
+</body>
+</html>
