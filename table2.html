@@ -9,8 +9,11 @@
 <body>
 
 <h1>食品の他栄養成分 比較用</h1>
-<h2>カロリー等のランキングを切替表示できます</h2>
-<h3>※全て100g当たり</h3>
+<h3>カロリー等のランキングを切替表示できます</h3>
+<h4>※全て100g当たり
+<br>
+元データ：<a href="https://www.mext.go.jp/a_menu/syokuhinseibun/">文部科学省_日本食品標準成分表</a></h4>
+
     <table id = "sampleTable"> 
 	<tr class="colTitle">
             <th>
@@ -20,10 +23,10 @@
      		<input type="checkbox" onChange="goFilter2()" id="chkDrink">飲料　<br>
 		<input type="checkbox" onChange="goFilter2()" id="chkFruit">果物　<br>
        		<input type="checkbox" onChange="goFilter2()" id="chkVegetable">野菜　<br>
-		<input type="checkbox" onChange="goFilter2()" id="chkMeat">赤身肉<br>
+		<input type="checkbox" onChange="goFilter2()" id="chkAkaMeat">赤身肉<br>
 		<input type="checkbox" onChange="goFilter2()" id="chkKakomeat">加工肉<br>
 		<input type="checkbox" onChange="goFilter2()" id="chkFish">魚　　<br>
-		<input type="checkbox" onChange="goFilter2()" id="chkSauce">調味料<br>
+		<input type="checkbox" onChange="goFilter2()" id="chkOil">油脂類<br>
 
 	   </th>	
             <th>食品名</th>
@@ -33,474 +36,303 @@
             <th cmanSortBtn>炭水化物(g)</th>
             <th cmanSortBtn>食塩相当(g)</th>
         </tr>
-        <tr kokurui>
-            <td>穀類</td>
-            <td>オートミール</td>
-            <td>380</td>
-            <td>13.7</td>
-            <td>5.7</td>
-            <td>69.1</td>
-            <td>0</td>
-        </tr>
-        <tr kokurui>
-            <td>穀類</td>
-            <td>蕎麦粉</td>
-            <td>361</td>
-            <td>12</td>
-            <td>3.1</td>
-            <td>69.6</td>
-            <td>0</td>
-        </tr>
-        <tr kokurui>
-            <td>穀類</td>
-            <td>白米</td>
-            <td>359</td>
-            <td>6.1</td>
-            <td>0.9</td>
-            <td>77.6</td>
-            <td>0</td>
-        </tr>
-        <tr kokurui>
-            <td>穀類</td>
-            <td>玄米</td>
-            <td>353</td>
-            <td>6.8</td>
-            <td>2.7</td>
-            <td>74.3</td>
-            <td>0</td>
-        </tr>
-        <tr kokurui>
-            <td>穀類</td>
-            <td>大麦</td>
-            <td>341</td>
-            <td>10.9</td>
-            <td>2.1</td>
-            <td>72.1</td>
-            <td>0</td>
-        </tr>
-        <tr kokurui>
-            <td>穀類</td>
-            <td>小麦</td>
-            <td>337</td>
-            <td>10.6</td>
-            <td>3.1</td>
-            <td>72.2</td>
-            <td>0</td>
-        </tr>
-        <tr kokurui>
-            <td>穀類</td>
-            <td>ライ麦粉（全粒粉)</td>
-            <td>334</td>
-            <td>12.7</td>
-            <td>2.7</td>
-            <td>70.7</td>
-            <td>0</td>
-        </tr>
-        <tr kokurui>
-            <td>穀類</td>
-            <td>小麦粉（全粒粉)</td>
-            <td>328</td>
-            <td>12.8</td>
-            <td>2.9</td>
-            <td>68.2</td>
-            <td>0</td>
-        </tr>
-        <tr namamen>
-            <td>生麺</td>
-            <td>沖縄そば</td>
-            <td>284</td>
-            <td>9.2</td>
-            <td>2</td>
-            <td>54.2</td>
-            <td>2.1</td>
-        </tr>
-        <tr namamen>
-            <td>生麺</td>
-            <td>中華麺</td>
-            <td>281</td>
-            <td>8.6</td>
-            <td>1.2</td>
-            <td>55.7</td>
-            <td>1.0</td>
-        </tr>
-        <tr namamen>
-            <td>生麺</td>
-            <td>そば</td>
-            <td>274</td>
-            <td>9.8</td>
-            <td>1.9</td>
-            <td>54.5</td>
-            <td>0</td>
-        </tr>
-        <tr namamen>
-            <td>生麺</td>
-            <td>うどん</td>
-            <td>270</td>
-            <td>6.1</td>
-            <td>0.6</td>
-            <td>56.8</td>
-            <td>2.5</td>
-        </tr>
-        <tr namamen>
-            <td>生麺</td>
-            <td>冷麺</td>
-            <td>252</td>
-            <td>3.9</td>
-            <td>0.7</td>
-            <td>57.6</td>
-            <td>1.3</td>
-        </tr>
-        <tr namamen>
-            <td>生麺</td>
-            <td>パスタ</td>
-            <td>248</td>
-            <td>7.8</td>
-            <td>1.9</td>
-            <td>46.9</td>
-            <td>1.2</td>
-        </tr>
-        <tr kanmen>
-            <td>乾麺</td>
-            <td>うどん</td>
-            <td>384</td>
-            <td>8.5</td>
-            <td>1.1</td>
-            <td>71.9</td>
-            <td>4.3</td>
-        </tr>
-        <tr kanmen>
-            <td>乾麺</td>
-            <td>パスタ</td>
-            <td>379</td>
-            <td>12.2</td>
-            <td>1.9</td>
-            <td>73.9</td>
-            <td>0</td>
-        </tr>
-        <tr kanmen>
-            <td>乾麺</td>
-            <td>中華麺</td>
-            <td>365</td>
-            <td>10.5</td>
-            <td>1.6</td>
-            <td>73</td>
-            <td>1.3</td>
-        </tr>
-        <tr kanmen>
-            <td>乾麺</td>
-            <td>そうめん</td>
-            <td>356</td>
-            <td>9.5</td>
-            <td>1.1</td>
-            <td>72.7</td>
-            <td>3.8</td>
-        </tr>
-        <tr kanmen>
-            <td>乾麺</td>
-            <td>沖縄そば</td>
-            <td>351</td>
-            <td>12</td>
-            <td>1.7</td>
-            <td>67.8</td>
-            <td>4.3</td>
-        </tr>
-        <tr kanmen>
-            <td>乾麺</td>
-            <td>そば</td>
-            <td>344</td>
-            <td>14</td>
-            <td>2.3</td>
-            <td>66.7</td>
-            <td>2.2</td>
-        </tr>
-        <tr kanmen>
-            <td>乾麺</td>
-            <td>手延そうめん</td>
-            <td>342</td>
-            <td>9.3</td>
-            <td>1.4</td>
-            <td>69.7</td>
-            <td>5.8</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>ミルクココア</td>
-            <td>400</td>
-            <td>7.4</td>
-            <td>6.8</td>
-            <td>80.4</td>
-            <td>0.7</td>
-        </tr>
-      <tr drink>
-            <td>飲料</td>
-            <td>ココア</td>
-            <td>386</td>
-            <td>18.5</td>
-            <td>21.6</td>
-            <td>42.4</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>青汁(ケール)</td>
-            <td>312</td>
-            <td>13.8</td>
-            <td>4.4</td>
-            <td>70.2</td>
-            <td>0.6</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>ジン</td>
-            <td>280</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0.1</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>本みりん</td>
-            <td>241</td>
-            <td>0.3</td>
-            <td>0</td>
-            <td>43.2</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>ウォッカ・ラム</td>
-            <td>237</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0.1</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>ウィスキー・ブランデー</td>
-            <td>234</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>焼酎・泡盛</td>
-            <td>206</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>梅酒</td>
-            <td>155</td>
-            <td>0.1</td>
-            <td>0</td>
-            <td>20.7</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>紹興酒</td>
-            <td>126</td>
-            <td>1.7</td>
-            <td>0</td>
-            <td>5.1</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>日本酒(本醸造酒)</td>
-            <td>106</td>
-            <td>0.4</td>
-            <td>0</td>
-            <td>4.5</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>白ワイン</td>
-            <td>75</td>
-            <td>0.1</td>
-            <td>0</td>
-            <td>2</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>赤ワイン</td>
-            <td>68</td>
-            <td>0.2</td>
-            <td>0</td>
-            <td>1.5</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>調製豆乳</td>
-            <td>63</td>
-            <td>3.2</td>
-            <td>3.6</td>
-            <td>4.8</td>
-            <td>0.1</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>ビール(スタウト)</td>
-            <td>62</td>
-            <td>0.5</td>
-            <td>0</td>
-            <td>4.9</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>牛乳</td>
-            <td>61</td>
-            <td>3.3</td>
-            <td>3.8</td>
-            <td>4.8</td>
-            <td>0.1</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>ぶどうジュース</td>
-            <td>54</td>
-            <td>0.3</td>
-            <td>0.2</td>
-            <td>14.3</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>チューハイ(レモン)</td>
-            <td>51</td>
-            <td>0</td>
-            <td>0</td>
-            <td>2.9</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>りんごジュース</td>
-            <td>47</td>
-            <td>0.1</td>
-            <td>0.2</td>
-            <td>11.4</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>コーラ</td>
-            <td>46</td>
-            <td>0.1</td>
-            <td>0</td>
-            <td>11.4</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>みかんジュース</td>
-            <td>45</td>
-            <td>0.5</td>
-            <td>0.1</td>
-            <td>10.6</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>豆乳</td>
-            <td>44</td>
-            <td>3.6</td>
-            <td>2</td>
-            <td>3.1</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>サイダー</td>
-            <td>41</td>
-            <td>0</td>
-            <td>0</td>
-            <td>10.2</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>ビール(薄色)</td>
-            <td>39</td>
-            <td>0.3</td>
-            <td>0</td>
-            <td>3.1</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>野菜ジュース</td>
-            <td>36</td>
-            <td>1</td>
-            <td>0.3</td>
-            <td>7.8</td>
-            <td>0.1</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>スポーツドリンク</td>
-            <td>21</td>
-            <td>0</td>
-            <td>0</td>
-            <td>5.1</td>
-            <td>0.1</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>お茶(玉露)</td>
-            <td>5</td>
-            <td>1.3</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>コーヒー</td>
-            <td>4</td>
-            <td>0.2</td>
-            <td>0</td>
-            <td>0.7</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>煎茶</td>
-            <td>2</td>
-            <td>0.2</td>
-            <td>0</td>
-            <td>0.2</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>麦茶</td>
-            <td>1</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0.3</td>
-            <td>0</td>
-        </tr>
-        <tr drink>
-            <td>飲料</td>
-            <td>紅茶</td>
-            <td>1</td>
-            <td>0.1</td>
-            <td>0</td>
-            <td>0.1</td>
-            <td>0</td>
-        </tr>
+<tr kokurui><td>穀類</td><td>オートミール</td><td>380</td><td>13.7</td><td>5.7</td><td>69.1</td><td>0</td></tr>
+<tr kokurui><td>穀類</td><td>蕎麦粉(全粒粉)</td><td>361</td><td>12</td><td>3.1</td><td>69.6</td><td>0</td></tr>
+<tr kokurui><td>穀類</td><td>白米</td><td>358</td><td>6.1</td><td>0.9</td><td>77.6</td><td>0</td></tr>
+<tr kokurui><td>穀類</td><td>玄米</td><td>353</td><td>6.8</td><td>2.7</td><td>74.3</td><td>0</td></tr>
+<tr kokurui><td>穀類</td><td>大麦</td><td>341</td><td>10.9</td><td>2.1</td><td>72.1</td><td>0</td></tr>
+<tr kokurui><td>穀類</td><td>小麦</td><td>337</td><td>10.6</td><td>3.1</td><td>72.2</td><td>0</td></tr>
+<tr kokurui><td>穀類</td><td>ライ麦粉(全粒粉)</td><td>334</td><td>12.7</td><td>2.7</td><td>70.7</td><td>0</td></tr>
+<tr kokurui><td>穀類</td><td>小麦粉(全粒粉)</td><td>328</td><td>12.8</td><td>2.9</td><td>68.2</td><td>0</td></tr>
+
+<tr namamen><td>生麺</td><td>沖縄そば</td><td>284</td><td>9.2</td><td>2</td><td>54.2</td><td>2.1</td></tr>
+<tr namamen><td>生麺</td><td>中華麺</td><td>281</td><td>8.6</td><td>1.2</td><td>55.7</td><td>1.0</td></tr>
+<tr namamen><td>生麺</td><td>そば</td><td>274</td><td>9.8</td><td>1.9</td><td>54.5</td><td>0</td></tr>
+<tr namamen><td>生麺</td><td>うどん</td><td>270</td><td>6.1</td><td>0.6</td><td>56.8</td><td>2.5</td></tr>
+<tr namamen><td>生麺</td><td>冷麺</td><td>252</td><td>3.9</td><td>0.7</td><td>57.6</td><td>1.3</td></tr>
+<tr namamen><td>生麺</td><td>パスタ</td><td>247</td><td>7.8</td><td>1.9</td><td>46.9</td><td>1.2</td></tr>
+
+<tr kanmen><td>乾麺</td><td>うどん</td><td>384</td><td>8.5</td><td>1.1</td><td>71.9</td><td>4.3</td></tr>
+<tr kanmen><td>乾麺</td><td>パスタ</td><td>379</td><td>12.2</td><td>1.9</td><td>73.9</td><td>0</td></tr>
+<tr kanmen><td>乾麺</td><td>中華麺</td><td>365</td><td>10.5</td><td>1.6</td><td>73</td><td>1.3</td></tr>
+<tr kanmen><td>乾麺</td><td>そうめん</td><td>356</td><td>9.5</td><td>1.1</td><td>72.7</td><td>3.8</td></tr>
+<tr kanmen><td>乾麺</td><td>沖縄そば</td><td>351</td><td>12</td><td>1.7</td><td>67.8</td><td>4.3</td></tr>
+<tr kanmen><td>乾麺</td><td>そば</td><td>344</td><td>14</td><td>2.3</td><td>66.7</td><td>2.2</td></tr>
+<tr kanmen><td>乾麺</td><td>手延そうめん</td><td>342</td><td>9.3</td><td>1.4</td><td>69.7</td><td>5.8</td></tr>
+
+<tr drink><td>飲料</td><td>ミルクココア</td><td>400</td><td>7.4</td><td>6.8</td><td>80.4</td><td>0.7</td></tr>
+<tr drink><td>飲料</td><td>ココア</td><td>386</td><td>18.5</td><td>21.6</td><td>42.4</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>青汁(ケール)</td><td>312</td><td>13.8</td><td>4.4</td><td>70.2</td><td>0.6</td></tr>
+<tr drink><td>飲料</td><td>ジン</td><td>280</td><td>0</td><td>0</td><td>0.1</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>本みりん</td><td>241</td><td>0.3</td><td>0</td><td>43.2</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>ウォッカ・ラム</td><td>237</td><td>0</td><td>0</td><td>0.1</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>抹茶</td><td>234</td><td>29.6</td><td>5.3</td><td>39.5</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>ウィスキー・ブランデー</td><td>234</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>焼酎・泡盛</td><td>206</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>梅酒</td><td>155</td><td>0.1</td><td>0</td><td>20.7</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>紹興酒</td><td>126</td><td>1.7</td><td>0</td><td>5.1</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>日本酒（本醸造酒)</td><td>106</td><td>0.4</td><td>0</td><td>4.5</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>白ワイン</td><td>75</td><td>0.1</td><td>0</td><td>2</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>赤ワイン</td><td>68</td><td>0.2</td><td>0</td><td>1.5</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>調製豆乳</td><td>63</td><td>3.2</td><td>3.6</td><td>4.8</td><td>0.1</td></tr>
+<tr drink><td>飲料</td><td>ビール（スタウト）</td><td>62</td><td>0.5</td><td>0</td><td>4.9</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>牛乳</td><td>61</td><td>3.3</td><td>3.8</td><td>4.8</td><td>0.1</td></tr>
+<tr drink><td>飲料</td><td>ぶどうジュース</td><td>54</td><td>0.3</td><td>0.2</td><td>14.3</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>チューハイ(レモン)</td><td>51</td><td>0</td><td>0</td><td>2.9</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>りんごジュース</td><td>47</td><td>0.1</td><td>0.2</td><td>11.4</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>コーラ</td><td>46</td><td>0.1</td><td>0</td><td>11.4</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>みかんジュース</td><td>45</td><td>0.5</td><td>0.1</td><td>10.6</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>ビール（黒）</td><td>45</td><td>0.4</td><td>0</td><td>3.6</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>豆乳</td><td>44</td><td>3.6</td><td>2</td><td>3.1</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>サイダー</td><td>41</td><td>0</td><td>0</td><td>10.2</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>ビール（淡色）</td><td>39</td><td>0.3</td><td>0</td><td>3.1</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>野菜ジュース</td><td>36</td><td>1</td><td>0.3</td><td>7.8</td><td>0.1</td></tr>
+<tr drink><td>飲料</td><td>にんじんジュース</td><td>29</td><td>0.6</td><td>0.1</td><td>6.7</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>スポーツドリンク</td><td>21</td><td>0</td><td>0</td><td>5.1</td><td>0.1</td></tr>
+<tr drink><td>飲料</td><td>トマトジュース</td><td>18</td><td>0.7</td><td>0.1</td><td>4</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>玉露</td><td>5</td><td>1.3</td><td>0</td><td>0</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>コーヒー</td><td>4</td><td>0.2</td><td>0</td><td>0.7</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>煎茶</td><td>2</td><td>0.2</td><td>0</td><td>0.2</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>麦茶</td><td>1</td><td>0</td><td>0</td><td>0.3</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>紅茶</td><td>1</td><td>0.1</td><td>0</td><td>0.1</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>ほうじ茶</td><td>0</td><td>0</td><td>0</td><td>0.1</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>烏龍茶</td><td>0</td><td>0</td><td>0</td><td>0.1</td><td>0</td></tr>
+<tr drink><td>飲料</td><td>玄米茶</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+
+<tr fruit><td>果実</td><td>アボカド</td><td>178</td><td>2.1</td><td>17.5</td><td>7.9</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>ドリアン</td><td>140</td><td>2.3</td><td>3.3</td><td>27.1</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>バナナ</td><td>93</td><td>1.1</td><td>0.2</td><td>22.5</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>ココナッツ/ナタデココ</td><td>80</td><td>0</td><td>0</td><td>20.2</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>マンゴスチン</td><td>71</td><td>0.6</td><td>0.2</td><td>17.5</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>ぶどう</td><td>69</td><td>0.6</td><td>0.2</td><td>16.9</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>マンゴー</td><td>68</td><td>0.6</td><td>0.1</td><td>16.9</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>さくらんぼ</td><td>64</td><td>1.0</td><td>0.2</td><td>15.2</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>かき</td><td>63</td><td>0.4</td><td>0.2</td><td>15.9</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>ライチー</td><td>61</td><td>1.0</td><td>0.1</td><td>16.4</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>いちじく</td><td>57</td><td>0.6</td><td>0.1</td><td>14.3</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>りんご</td><td>56</td><td>0.2</td><td>0.3</td><td>16.2</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>パインアップル</td><td>54</td><td>0.6</td><td>0.1</td><td>13.7</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>キウイフルーツ</td><td>51</td><td>1.0</td><td>0.2</td><td>13.4</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>うんしゅうみかん</td><td>49</td><td>0.7</td><td>0.1</td><td>12.0</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>プルーン</td><td>49</td><td>0.7</td><td>0.1</td><td>12.6</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>西洋なし</td><td>48</td><td>0.3</td><td>0.1</td><td>14.4</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>ブルーベリー</td><td>48</td><td>0.5</td><td>0.1</td><td>12.9</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>レモン</td><td>43</td><td>0.9</td><td>0.7</td><td>12.5</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>すいか</td><td>41</td><td>0.6</td><td>0.1</td><td>9.5</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>びわ</td><td>41</td><td>0.3</td><td>0.1</td><td>10.6</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>メロン</td><td>40</td><td>1.1</td><td>0.1</td><td>10.3</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>グレープフルーツ</td><td>40</td><td>0.9</td><td>0.1</td><td>9.6</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>もも</td><td>38</td><td>0.6</td><td>0.1</td><td>10.2</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>あんず</td><td>37</td><td>1.0</td><td>0.3</td><td>8.5</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>ラズベリー</td><td>36</td><td>1.1</td><td>0.1</td><td>10.2</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>アセロラ</td><td>36</td><td>0.7</td><td>0.1</td><td>9.0</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>シークヮーサー</td><td>35</td><td>0.8</td><td>0.1</td><td>7.9</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>パパイア/完熟</td><td>33</td><td>0.5</td><td>0.2</td><td>9.5</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>グァバ/白肉種</td><td>33</td><td>0.6</td><td>0.1</td><td>9.9</td><td>0</td></tr>
+<tr fruit><td>果実</td><td>いちご</td><td>31</td><td>0.9</td><td>0.1</td><td>8.5</td><td>0</td></tr>
+
+<tr vegetable><td>野菜</td><td>えだまめ</td><td>125</td><td>11.7</td><td>6.2</td><td>8.8</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>そらまめ</td><td>102</td><td>10.9</td><td>0.2</td><td>15.5</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>とうもろこし</td><td>89</td><td>3.6</td><td>1.7</td><td>16.8</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>かぼちゃ</td><td>78</td><td>1.9</td><td>0.3</td><td>20.6</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>れんこん</td><td>66</td><td>1.9</td><td>0.1</td><td>15.5</td><td>0.1</td></tr>
+<tr vegetable><td>野菜</td><td>ごぼう</td><td>58</td><td>1.8</td><td>0.1</td><td>15.4</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>めキャベツ</td><td>52</td><td>5.7</td><td>0.1</td><td>9.9</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>ブロッコリー</td><td>37</td><td>5.4</td><td>0.6</td><td>6.6</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>にんじん</td><td>35</td><td>0.7</td><td>0.2</td><td>9.3</td><td>0.1</td></tr>
+<tr vegetable><td>野菜</td><td>パセリ</td><td>34</td><td>4.0</td><td>0.7</td><td>7.8</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>たまねぎ</td><td>33</td><td>1.0</td><td>0.1</td><td>8.4</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>しそ</td><td>32</td><td>3.9</td><td>0.1</td><td>7.5</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>ねぎ</td><td>29</td><td>1.9</td><td>0.3</td><td>6.5</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>もやし</td><td>29</td><td>3.7</td><td>1.5</td><td>2.3</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>カリフラワー</td><td>28</td><td>3.0</td><td>0.1</td><td>5.2</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>しょうが</td><td>28</td><td>0.9</td><td>0.3</td><td>6.6</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>オクラ</td><td>26</td><td>2.1</td><td>0.2</td><td>6.6</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>ケール</td><td>26</td><td>2.1</td><td>0.4</td><td>5.6</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>ししとう</td><td>25</td><td>1.9</td><td>0.3</td><td>5.7</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>いんげんまめ</td><td>23</td><td>1.8</td><td>0.1</td><td>5.1</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>みずな</td><td>23</td><td>2.2</td><td>0.1</td><td>4.8</td><td>0.1</td></tr>
+<tr vegetable><td>野菜</td><td>アスパラガス</td><td>21</td><td>2.6</td><td>0.2</td><td>3.9</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>キャベツ</td><td>21</td><td>1.3</td><td>0.2</td><td>5.2</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>トマト</td><td>20</td><td>0.7</td><td>0.1</td><td>4.7</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>ピーマン</td><td>20</td><td>0.9</td><td>0.2</td><td>5.1</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>なす</td><td>18</td><td>1.1</td><td>0.1</td><td>5.1</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>ほうれんそう</td><td>18</td><td>2.2</td><td>0.4</td><td>3.1</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>ズッキーニ</td><td>16</td><td>1.3</td><td>0.1</td><td>2.8</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>レタス</td><td>16</td><td>1.4</td><td>0.1</td><td>3.3</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>だいこん</td><td>15</td><td>0.5</td><td>0.1</td><td>4.1</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>きゅうり</td><td>13</td><td>1.0</td><td>0.1</td><td>3.0</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>こまつな</td><td>13</td><td>1.5</td><td>0.2</td><td>2.4</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>はくさい</td><td>13</td><td>0.8</td><td>0.1</td><td>3.2</td><td>0</td></tr>
+<tr vegetable><td>野菜</td><td>クレソン</td><td>13</td><td>2.1</td><td>0.1</td><td>2.5</td><td>0.1</td></tr>
+<tr vegetable><td>野菜</td><td>セロリ</td><td>12</td><td>0.4</td><td>0.1</td><td>3.6</td><td>0.1</td></tr>
+<tr vegetable><td>野菜</td><td>チンゲンサイ</td><td>9</td><td>0.6</td><td>0.1</td><td>2.0</td><td>0.1</td></tr>
+
+<tr akameat><td>赤身肉</td><td>和牛/リブロース</td><td>395</td><td>14.0</td><td>40.0</td><td>0.2</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>和牛/サーロイン</td><td>294</td><td>17.1</td><td>25.8</td><td>0.4</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>和牛/かたロース</td><td>293</td><td>16.5</td><td>26.1</td><td>0.2</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>和牛/ヒレ</td><td>207</td><td>19.1</td><td>15.0</td><td>0.3</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>和牛/ランプ</td><td>196</td><td>19.2</td><td>13.6</td><td>0.5</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>和牛/かた</td><td>183</td><td>20.2</td><td>12.2</td><td>0.3</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>和牛/もも</td><td>176</td><td>21.3</td><td>10.7</td><td>0.6</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>輸入牛/リブロース</td><td>163</td><td>21.7</td><td>9.1</td><td>0.4</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>輸入牛/かたロース</td><td>160</td><td>19.7</td><td>9.5</td><td>0.1</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>和牛/そともも</td><td>159</td><td>20.7</td><td>8.7</td><td>0.6</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>豚/かたロース</td><td>146</td><td>19.7</td><td>7.8</td><td>0.1</td><td>0.2</td></tr>
+<tr akameat><td>赤身肉</td><td>豚/ロース</td><td>140</td><td>22.7</td><td>5.6</td><td>0.3</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>豚/そともも</td><td>133</td><td>21.4</td><td>5.5</td><td>0.2</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>鶏/もも</td><td>128</td><td>22.0</td><td>4.8</td><td>0</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>輸入牛/サーロイン</td><td>127</td><td>22.0</td><td>4.4</td><td>0.5</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>輸入牛/ヒレ</td><td>123</td><td>20.5</td><td>4.8</td><td>0.3</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>豚/もも</td><td>119</td><td>22.1</td><td>3.6</td><td>0.2</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>豚/ヒレ</td><td>118</td><td>22.2</td><td>3.7</td><td>0.3</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>輸入牛/もも</td><td>117</td><td>21.2</td><td>4.3</td><td>0.4</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>輸入牛/そともも</td><td>117</td><td>21.2</td><td>3.9</td><td>0.3</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>輸入牛/かた</td><td>114</td><td>20.4</td><td>4.6</td><td>0.1</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>豚/かた</td><td>114</td><td>20.9</td><td>3.8</td><td>0.2</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>鶏/むね</td><td>113</td><td>24.4</td><td>1.9</td><td>0</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>輸入牛/ランプ</td><td>112</td><td>21.6</td><td>3.0</td><td>0.5</td><td>0.1</td></tr>
+<tr akameat><td>赤身肉</td><td>鶏/ささみ</td><td>105</td><td>24.6</td><td>1.1</td><td>0</td><td>0.1</td></tr>
+
+<tr kakomeat><td>加工肉</td><td>豚/ドライソーセージ</td><td>467</td><td>26.7</td><td>42.0</td><td>2.6</td><td>4.4</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/ばらベーコン</td><td>400</td><td>12.9</td><td>39.1</td><td>0.3</td><td>2.0</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/セミドライソーセージ</td><td>335</td><td>16.9</td><td>29.7</td><td>2.9</td><td>2.9</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/ウインナーソーセージ</td><td>319</td><td>11.5</td><td>30.6</td><td>3.3</td><td>1.9</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/フランクフルトソーセージ</td><td>295</td><td>12.7</td><td>24.7</td><td>6.2</td><td>1.9</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/生ハム</td><td>253</td><td>25.7</td><td>18.4</td><td>0</td><td>5.6</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/ボロニアソーセージ</td><td>242</td><td>12.5</td><td>21.0</td><td>2.9</td><td>2.1</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/ショルダーハム</td><td>221</td><td>16.1</td><td>18.2</td><td>0.6</td><td>1.6</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/ロースハム</td><td>211</td><td>18.6</td><td>14.5</td><td>2.0</td><td>2.3</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/ロースベーコン</td><td>202</td><td>16.8</td><td>14.6</td><td>3.2</td><td>2.2</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/リオナソーセージ</td><td>188</td><td>14.9</td><td>13.1</td><td>3.7</td><td>2.3</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/ショルダーベーコン</td><td>178</td><td>17.2</td><td>11.9</td><td>2.5</td><td>2.4</td></tr>
+<tr kakomeat><td>加工肉</td><td>魚介類/魚肉ハム</td><td>155</td><td>13.4</td><td>6.7</td><td>11.1</td><td>2.3</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/ボンレスハム</td><td>115</td><td>18.7</td><td>4.0</td><td>1.8</td><td>2.8</td></tr>
+<tr kakomeat><td>加工肉</td><td>豚/プレスハム</td><td>113</td><td>15.4</td><td>4.5</td><td>3.9</td><td>2.4</td></tr>
+
+<tr fish><td>魚類</td><td>あゆ/養殖/内臓</td><td>485</td><td>7.4</td><td>55.0</td><td>0.3</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>あんこう/きも</td><td>401</td><td>10.0</td><td>41.9</td><td>2.2</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>（まぐろ類）/みなみまぐろ/脂身</td><td>322</td><td>20.3</td><td>28.3</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>（まぐろ類）/くろまぐろ/天然/脂身</td><td>308</td><td>20.1</td><td>27.5</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>たいせいようさば</td><td>295</td><td>17.2</td><td>26.8</td><td>0.4</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>さんま/皮つき</td><td>287</td><td>18.1</td><td>25.6</td><td>0.1</td><td>0.4</td></tr>
+<tr fish><td>魚類</td><td>こい/養殖/内臓</td><td>258</td><td>9.0</td><td>25.9</td><td>1.3</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>たちうお</td><td>238</td><td>16.5</td><td>20.9</td><td>0</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>うなぎ/養殖</td><td>228</td><td>17.1</td><td>19.3</td><td>0.3</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>ぶり/成魚</td><td>222</td><td>21.4</td><td>17.6</td><td>0.3</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>（さけ・ます類）/たいせいようさけ/養殖/皮つき</td><td>218</td><td>20.1</td><td>16.5</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>ぶり/はまち/養殖/皮つき</td><td>217</td><td>20.7</td><td>17.2</td><td>0.3</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>まさば</td><td>211</td><td>20.6</td><td>16.8</td><td>0.3</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>ぎんだら</td><td>210</td><td>13.6</td><td>18.6</td><td>0</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>（さけ・ます類）/にじます/養殖/皮つき</td><td>201</td><td>21.4</td><td>14.2</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>にしん</td><td>196</td><td>17.4</td><td>15.1</td><td>0.1</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>（さけ・ます類）/ぎんざけ/養殖</td><td>188</td><td>19.6</td><td>12.8</td><td>0.3</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>あゆ/天然/内臓</td><td>180</td><td>9.5</td><td>17.5</td><td>0.3</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>（さけ・ます類）/ますのすけ</td><td>176</td><td>19.5</td><td>12.5</td><td>0</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>むつ</td><td>175</td><td>16.7</td><td>12.6</td><td>0</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>かたくちいわし</td><td>171</td><td>18.2</td><td>12.1</td><td>0.3</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>さわら</td><td>161</td><td>20.1</td><td>9.7</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>（たい類）/まだい/養殖/皮つき</td><td>160</td><td>20.9</td><td>9.4</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>こい/養殖</td><td>157</td><td>17.7</td><td>10.2</td><td>0.2</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>まいわし</td><td>156</td><td>19.2</td><td>9.2</td><td>0.2</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>ししゃも干し</td><td>152</td><td>21.0</td><td>8.1</td><td>0.2</td><td>1.2</td></tr>
+<tr fish><td>魚類</td><td>（かつお類）/かつお/秋獲り</td><td>150</td><td>25.0</td><td>6.2</td><td>0.2</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>きんめだい</td><td>147</td><td>17.8</td><td>9.0</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>しまあじ/養殖</td><td>147</td><td>21.9</td><td>8.0</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>あなご</td><td>146</td><td>17.3</td><td>9.3</td><td>0</td><td>0.4</td></tr>
+<tr fish><td>魚類</td><td>（さけ・ます類）/さくらます</td><td>146</td><td>20.9</td><td>7.7</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>（かじき類）/めかじき</td><td>139</td><td>19.2</td><td>7.6</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>にしん/かずのこ</td><td>139</td><td>25.2</td><td>6.7</td><td>0.2</td><td>0.8</td></tr>
+<tr fish><td>魚類</td><td>（まぐろ類）/めじまぐろ</td><td>139</td><td>25.2</td><td>4.8</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>あゆ/養殖</td><td>138</td><td>17.8</td><td>7.9</td><td>0.6</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>かます</td><td>137</td><td>18.9</td><td>7.2</td><td>0.1</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>（たい類）/くろだい</td><td>137</td><td>20.4</td><td>6.7</td><td>0.3</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>まるあじ</td><td>133</td><td>22.1</td><td>5.6</td><td>0.2</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>はも</td><td>132</td><td>22.3</td><td>5.3</td><td>0</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>（たら類）/すけとうだら/たらこ</td><td>131</td><td>24.0</td><td>4.7</td><td>0.4</td><td>4.6</td></tr>
+<tr fish><td>魚類</td><td>（たい類）/まだい/天然</td><td>129</td><td>20.6</td><td>5.8</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>ひらまさ</td><td>128</td><td>22.6</td><td>4.9</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>（さけ・ます類）/べにざけ</td><td>127</td><td>22.5</td><td>4.5</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>うるめいわし</td><td>124</td><td>21.3</td><td>4.8</td><td>0.3</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>（かれい類）/子持ちがれい</td><td>123</td><td>19.9</td><td>6.2</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>かんぱち/三枚おろし</td><td>119</td><td>21.0</td><td>4.2</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>ひらめ/養殖/皮つき</td><td>115</td><td>21.6</td><td>3.7</td><td>0</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>（まぐろ類）/くろまぐろ/天然/赤身</td><td>115</td><td>26.4</td><td>1.4</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>まあじ/小型/骨付き</td><td>114</td><td>17.8</td><td>5.0</td><td>0.1</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>すずき</td><td>113</td><td>19.8</td><td>4.2</td><td>0</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>まあじ/皮つき</td><td>112</td><td>19.7</td><td>4.5</td><td>0.1</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>いかなご</td><td>111</td><td>17.2</td><td>5.5</td><td>0.1</td><td>0.5</td></tr>
+<tr fish><td>魚類</td><td>ほうぼう</td><td>110</td><td>19.6</td><td>4.2</td><td>0</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>（かつお類）/かつお/春獲り</td><td>108</td><td>25.8</td><td>0.5</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>（かじき類）/まかじき</td><td>107</td><td>23.1</td><td>1.8</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>ほっけ</td><td>103</td><td>17.3</td><td>4.4</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>うなぎ/きも</td><td>102</td><td>13.0</td><td>5.3</td><td>3.5</td><td>0.4</td></tr>
+<tr fish><td>魚類</td><td>（まぐろ類）/きはだ</td><td>102</td><td>24.3</td><td>1.0</td><td>0</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>いわな/養殖</td><td>101</td><td>19.0</td><td>3.6</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>はたはた</td><td>101</td><td>14.1</td><td>5.7</td><td>0</td><td>0.5</td></tr>
+<tr fish><td>魚類</td><td>（たい類）/きだい</td><td>100</td><td>18.6</td><td>3.1</td><td>0.2</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>めばる</td><td>100</td><td>18.1</td><td>3.5</td><td>0</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>かじか</td><td>98</td><td>15.0</td><td>5.0</td><td>0.2</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>ひらめ/天然</td><td>94</td><td>20.0</td><td>2.0</td><td>0</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>あゆ/天然</td><td>93</td><td>18.3</td><td>2.4</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>（かじき類）/くろかじき</td><td>93</td><td>22.9</td><td>0.2</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>ふな</td><td>93</td><td>18.2</td><td>2.5</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>（かれい類）/まがれい</td><td>89</td><td>19.6</td><td>1.3</td><td>0.1</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>とびうお</td><td>89</td><td>21.0</td><td>0.7</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>さより</td><td>88</td><td>19.6</td><td>1.3</td><td>0</td><td>0.5</td></tr>
+<tr fish><td>魚類</td><td>（まぐろ類）/みなみまぐろ/赤身</td><td>88</td><td>21.6</td><td>0.4</td><td>0.1</td><td>0.1</td></tr>
+<tr fish><td>魚類</td><td>したびらめ</td><td>87</td><td>19.2</td><td>1.6</td><td>0</td><td>0.4</td></tr>
+<tr fish><td>魚類</td><td>きびなご</td><td>85</td><td>18.8</td><td>1.4</td><td>0.1</td><td>0.4</td></tr>
+<tr fish><td>魚類</td><td>かさご</td><td>83</td><td>19.3</td><td>1.1</td><td>0.1</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>おこぜ</td><td>81</td><td>19.6</td><td>0.2</td><td>0.2</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>とらふぐ/養殖</td><td>80</td><td>19.3</td><td>0.3</td><td>0.2</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>えい</td><td>78</td><td>19.1</td><td>0.3</td><td>0.1</td><td>0.7</td></tr>
+<tr fish><td>魚類</td><td>ぐち</td><td>78</td><td>18.0</td><td>0.8</td><td>0</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>はぜ</td><td>78</td><td>19.1</td><td>0.2</td><td>0.1</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>まふぐ</td><td>78</td><td>18.9</td><td>0.4</td><td>0</td><td>0.2</td></tr>
+<tr fish><td>魚類</td><td>ホキ</td><td>78</td><td>17.0</td><td>1.3</td><td>0</td><td>0.4</td></tr>
+<tr fish><td>魚類</td><td>かわはぎ</td><td>77</td><td>18.8</td><td>0.4</td><td>0</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>きす</td><td>73</td><td>18.5</td><td>0.2</td><td>0</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>（たら類）/すけとうだら</td><td>72</td><td>17.4</td><td>1.0</td><td>0.1</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>（たら類）/まだら</td><td>72</td><td>17.6</td><td>0.2</td><td>0.1</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>わかさぎ</td><td>71</td><td>14.4</td><td>1.7</td><td>0.1</td><td>0.5</td></tr>
+<tr fish><td>魚類</td><td>しらうお</td><td>70</td><td>13.6</td><td>2.0</td><td>0.1</td><td>0.4</td></tr>
+<tr fish><td>魚類</td><td>しらす</td><td>67</td><td>15.0</td><td>1.3</td><td>0.1</td><td>1.0</td></tr>
+<tr fish><td>魚類</td><td>（たら類）/まだら/しらこ</td><td>60</td><td>13.4</td><td>0.8</td><td>0.2</td><td>0.3</td></tr>
+<tr fish><td>魚類</td><td>あんこう</td><td>54</td><td>13.0</td><td>0.2</td><td>0.3</td><td>0.3</td></tr>
+
+<tr oil><td>油脂類</td><td>（植物油脂類）/ひまわり油/ハイリノール</td><td>899</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/ひまわり油/ハイオレイック</td><td>899</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/あまに油</td><td>897</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/えごま油</td><td>897</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/オリーブ油</td><td>894</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/パーム核油</td><td>893</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/サフラワー油/ハイオレイック</td><td>892</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/ひまわり油/ミッドオレイック</td><td>892</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/ごま油</td><td>890</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/やし油</td><td>889</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（その他）/ショートニング/家庭用</td><td>889</td><td>0</td><td>99.9</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/なたね油</td><td>887</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/パーム油</td><td>887</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/調合油</td><td>886</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（その他）/ショートニング/業務用/フライ</td><td>886</td><td>0</td><td>99.9</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/大豆油</td><td>885</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（動物油脂類）/ラード</td><td>885</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/とうもろこし油</td><td>884</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/綿実油</td><td>883</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/サフラワー油/ハイリノール</td><td>883</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/落花生油</td><td>882</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/ぶどう油</td><td>882</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（その他）/ショートニング/業務用/製菓</td><td>881</td><td>0</td><td>99.9</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（植物油脂類）/米ぬか油</td><td>880</td><td>0</td><td>100.0</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（動物油脂類）/牛脂</td><td>869</td><td>0.2</td><td>99.8</td><td>0</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（マーガリン類）/マーガリン/業務用/有塩</td><td>740</td><td>0.3</td><td>84.3</td><td>0.1</td><td>1.3</td></tr>
+<tr oil><td>油脂類</td><td>（バター類）/無発酵バター/食塩不使用バター</td><td>720</td><td>0.5</td><td>83.0</td><td>0.2</td><td>0</td></tr>
+<tr oil><td>油脂類</td><td>（マーガリン類）/マーガリン/家庭用/有塩</td><td>715</td><td>0.4</td><td>83.1</td><td>0.5</td><td>1.3</td></tr>
+<tr oil><td>油脂類</td><td>（バター類）/発酵バター/有塩バター</td><td>713</td><td>0.6</td><td>80.0</td><td>4.4</td><td>1.3</td></tr>
+<tr oil><td>油脂類</td><td>（バター類）/無発酵バター/有塩バター</td><td>700</td><td>0.6</td><td>81.0</td><td>0.2</td><td>1.9</td></tr>
+<tr oil><td>油脂類</td><td>（マーガリン類）/ファットスプレッド</td><td>579</td><td>0.2</td><td>69.1</td><td>0</td><td>1.1</td></tr>
+
     </table>
 <script type="text/javascript" src="table2.js"></script>
 </body>
