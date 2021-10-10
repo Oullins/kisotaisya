@@ -205,10 +205,10 @@ function goFilter2(){
   if(document.getElementById("chkDrink").checked)    {value += ' drink';}
   if(document.getElementById("chkFruit").checked)     {value += ' fruit';}
   if(document.getElementById("chkVegetable").checked) {value += ' vegetable';}
-  if(document.getElementById("chkMeat").checked)    {value += ' meat';}
+  if(document.getElementById("chkAkaMeat").checked)    {value += ' akameat';}
   if(document.getElementById("chkKakomeat").checked)    {value += ' kakomeat';}
   if(document.getElementById("chkFish").checked)    {value += ' fish';}
-  if(document.getElementById("chkSauce").checked)    {value += ' sauce';}
+  if(document.getElementById("chkOil").checked)    {value += ' oil';}
 
   if(value == ''){
     // --- 未選択はクラスをクリア ---
