@@ -208,6 +208,7 @@ function goFilter2(){
   if(document.getElementById("chkAkaMeat").checked)    {value += ' akameat';}
   if(document.getElementById("chkKakomeat").checked)    {value += ' kakomeat';}
   if(document.getElementById("chkFish").checked)    {value += ' fish';}
+  if(document.getElementById("chkKai").checked)    {value += ' kai';}
   if(document.getElementById("chkOil").checked)    {value += ' oil';}
   if(document.getElementById("chkSauce").checked)    {value += ' sauce';}
   if(document.getElementById("chkEgg").checked)    {value += ' egg';}

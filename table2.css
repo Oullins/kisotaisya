@@ -64,6 +64,7 @@ input[type='checkbox'] {
   .akameat      tr[akameat]       {display: table-row;}
   .kakomeat     tr[kakomeat]	{display: table-row;}
   .fish         tr[fish]          {display: table-row;}
+  .kai          tr[kai]           {display: table-row;}
   .oil          tr[oil]		{display: table-row;}
   .sauce        tr[sauce]		{display: table-row;}
   .egg          tr[egg]		{display: table-row;}
