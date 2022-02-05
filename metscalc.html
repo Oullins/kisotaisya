@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+
+<head>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+
+mets_act = new Array(
+[2.0,"2.0METS:フルート演奏、ゆっくり歩行(53m/分)"],
+[2.3,"2.3METS:ピアノ演奏、ゆっくり掃除"],
+[2.5,"2.5METS:ギター演奏、立って掃除"],
+[3.0,"3.0METS:打楽器演奏、パンを焼く、普通歩行(67m/分)"],
+[3.3,"3.3METS:台所での活動（調理、皿洗い）"],
+[3.5,"3.5METS:マーチング、歩行(85m/分)、食事準備、モップがけ、窓掃除"],
+[3.8,"3.8METS:ドラム演奏"],
+[4.0,"4.0METS:自転車に乗る"],
+[4.3,"4.3METS:やや速歩"],
+[4.5,"4.5METS:床磨き"],
+[5.0,"5.0METS:速歩(107m/分)"],
+);
+
+// -->
+</script>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta name="ROBOTS" content="ALL" />
+    <meta lang="ja" xml:lang="ja" name="Translator" content="Mari Sugiyama" />
+    <meta name="verify-v1" content="/Ix5LcsdSSHpuH/gHtjRM53urdpT73B1uz9dpBTE8Oc=" />
+<meta name="description" content="音楽活動、楽器演奏の消費カロリー計算" />
+<meta name="keywords" content="音楽活動,楽器演奏,ピアノ,ギター,ドラム,消費カロリー,計算,メッツ法,Mets,ギター"  /> 
+
+<!--Require Mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Require Stylesheet-->
+<link rel="stylesheet" href="./general.css">
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<title>音楽活動、楽器演奏の消費カロリー計算</title>
+
+<link href="./general.css" type="text/css" rel="STYLESHEET" />
+
+<!-- 計算用のJS -->
+<script type="text/javascript" src="./calc.js"></script>
+
+</head>
+
+<body oncontextmenu="return false">
+
+<div id="wrapper">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=469554119735767&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+日常から、ランニング、水泳、ウォーキング、スポーツ、仕事など様々な消費カロリーが計算出来ます。
+<a href="https://oullins.github.io/kisotaisya/">HOMEへ戻る</a>
+<hr />
+
+<div id="contents">
+
+<div id="main">
+
+
+<p class="clearLeft"></p>
+
+<h2>音楽活動、楽器演奏の消費カロリー計算</h2>
+
+<p>音楽活動、楽器演奏の消費カロリー計算</p>
+
+体重を入力し、計算する項目にチェックを付け、運動時間(分)を入力し、「消費カロリーを計算する」をクリックしてください。<br />
+
+<div class="box">
+<form name="eecalc" id="eecalc" action="#">
+<img src="./img/ht.gif">
+<b>体重 <input size="3" type="text" name="weight" value="0" pattern="[0-9]*"  style="font-size:22px;" />kg</b>
+<hr />
+<!-- google_ad_section_start -->
+<script language="JavaScript" type="text/javascript">
+<!--
+for (x=0; x<mets_act.length; x++){
+document.write( "<input type='checkbox' name='chk' />" );
+document.write( "<input size='3' type='text' value='60' pattern='[0-9]*' style='font-size:14px;' />" );
+document.write( " <b>分</b> " );
+document.write( "<input size='5' type='text' value=''  style='font-size:14px;' />kcal　");
+document.write( mets_act[x][1], "<hr />" );
+}
+// -->
+</script>
+</div>
+
+<div class="box_fl"><input type="button" name="cal" value="消費カロリーを計算する" onclick="calc_kcal()" onkeypress="calc_kcal()" style="font-size:22px;" /></div>
+<div class="box_fl"><input type="reset" value="入力値をクリアする" style="font-size:22px;" /></div>
+<div class="clear"></div>
+
+<h3>消費カロリー 計算結果！</h3>
+<p>
+<b>消費カロリー合計　<input size="10" type="text" name="goukei" value="0"  style="font-size:22px;" />kcal</b>
+</p><p>
+<b>燃焼した脂肪量　<input size="10" type="text" name="fat" value="0" style="font-size:22px;" />グラム</b>
+</p>
+<hr />
+
+<span class="yellow"><img src="./img/ht.gif"><b>消費したカロリーの目安とウォーキング比較</b></span>
+<div class="box">
+ごはん <input size="4" type="text" name="rice" value="0"  style="font-size:16px;" />膳分／
+食パン <input size="4" type="text" name="bread" value="0"  style="font-size:16px;" />枚分<br />
+<hr />
+ウォーキン<input size="4" type="text" name="time_wh" value="0" style="font-size:16px;" />時間 又は<input size="4" type="text" name="time_wm" value="0"  style="font-size:16px;" />分<br />
+</form>
+</div>
+
+<hr />
+
+
+
+<!-- main --></div>
+
+<b>【計算方法について】</b>
+カロリー消費量（kcal）＝1.05×体重（kg）×METS係数×運動時間（h）
+METS（metabolic equivalents）とは？
+厚生労働省が2006年7月に策定した「健康づくりのための運動指針2006で、
+ＭＥＴＳ(metabolic equivalents)はトレーニングなどの身体運動時の代謝量が、
+安静時の何倍に相当するのかを示す尺度で、一言でいうと「運動強度」のことです。<br />
+
+
+<!--contents--></div>
+
+</div><!-- wrapper -->
+</body>
+</html>
